@@ -1,4 +1,4 @@
-import sum from './index.js';
+import {sum} from './index.js';
 
 describe('intro/sum', () => {
   it('should return sum of numbers', () => {
