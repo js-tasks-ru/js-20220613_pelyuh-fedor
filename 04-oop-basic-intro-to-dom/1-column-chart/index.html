@@ -43,6 +43,17 @@
       orders.append(ordersChart.element);
       sales.append(salesChart.element);
       customers.append(customersChart.element);
+
+
+
+      const formatHeading = data => `USD ${data}`;
+      const value = 100;
+
+      const columnChart = new ColumnChart({ formatHeading, value });
+      const columnLink = columnChart.element.querySelector('.column-chart__header');
+
+      // expect(columnLink).toHaveTextContent(formatHeading(value));
+      console.log(columnLink.textContent === formatHeading(value));
     </script>
   </body>
 </html>
